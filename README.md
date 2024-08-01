@@ -1,1 +1,1 @@
-# SpikingNeuralNetworkDemo
+# SpikingNeuralNetworksDemo
