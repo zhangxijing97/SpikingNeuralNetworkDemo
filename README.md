@@ -4,9 +4,9 @@
 
 2. **Synapse**: The junction between two neurons where information is transmitted from one neuron to another.
 
-3. **Axon**: The long, thread-like part of a neuron that transmits impulses away from the cell body.
+3. **Axon**: Transmits signals away from the cell body, usually one per neuron, can be long, often myelinated, smooth structure.
 
-4. **Dendrite**: The branched projections of a neuron that receive signals from other neurons.
+4. **Dendrite**: Receives signals toward the cell body, many per neuron, short and branched, not myelinated, tree-like structure.
 
 5. **Neuromorphic**: Referring to the design and development of hardware and software systems inspired by the structure and function of the human brain.
 
