@@ -59,6 +59,8 @@ V = Vinside − Voutside<br>
 Vinside ​is the electrical potential inside the cell(neuron).<br>
 Voutside is the electrical potential outside the cell(neuron).<br>
 
+**Membrane Time Constant τm:** 
+
 ### Model Description
 The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. The membrane potential V of the neuron is governed by the following differential equation:
 
@@ -72,6 +74,8 @@ where:
 - I(t) is the input current at time t.
 
 -  τm is the membrane time constant
+
+![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron.png)
 
 ### Dynamics of the LIF Model
 1. **Integration**:
