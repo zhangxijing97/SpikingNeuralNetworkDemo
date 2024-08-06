@@ -52,25 +52,27 @@ Spiking Neural Networks (SNNs) and neuromorphic hardware offer significant advan
 ## Leaky Integrate-and-Fire (LIF) Neuron Model
 
 ### Model Description
-The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. The membrane potential \( V \) of the neuron is governed by the following differential equation:
+The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. The membrane potential V of the neuron is governed by the following differential equation:
 
-\[ \tau_m \frac{dV(t)}{dt} = - (V(t) - V_{rest}) + R_m I(t) \]
+τm(dt/dV(t)) = −(V(t)−Vrest)+RmI(t)
 
 where:
-- \( \tau_m \) is the membrane time constant (the time it takes for the membrane potential to decay to 1/e of its value).
-- \( V(t) \) is the membrane potential at time \( t \).
-- \( V_{rest} \) is the resting potential (the potential at which the neuron is at rest).
-- \( R_m \) is the membrane resistance.
-- \( I(t) \) is the input current at time \( t \).
+- τm is the membrane time constant (the time it takes for the membrane potential to decay to 1/e of its value).
+- V(t) is the membrane potential at time t.
+- Vrest is the resting potential (the potential at which the neuron is at rest).
+- Rm is the membrane resistance.
+- I(t) is the input current at time t.
+
+-  τm is the membrane time constant
 
 ### Dynamics of the LIF Model
 1. **Integration**:
-   - The input current \( I(t) \) causes the membrane potential \( V(t) \) to increase.
-   - The term \( - (V(t) - V_{rest}) \) represents the "leak" that causes the membrane potential to decay back towards the resting potential \( V_{rest} \).
+   - The input current I(t) causes the membrane potential V(t) to increase.
+   - The term -(V(t)−Vrest) represents the "leak" that causes the membrane potential to decay back towards the resting potential Vrest.
 
 2. **Firing**:
-   - When the membrane potential \( V(t) \) reaches a certain threshold \( V_{th} \), the neuron "fires" or generates a spike.
-   - After firing, the membrane potential is reset to a lower value \( V_{reset} \).
+   - When the membrane potential V(t) reaches a certain threshold Vth, the neuron "fires" or generates a spike.
+   - After firing, the membrane potential is reset to a lower value Vreset.
 
 3. **Refractory Period**:
    - After a spike, there may be a refractory period during which the neuron is unable to fire again, allowing the neuron to reset.
