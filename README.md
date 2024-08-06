@@ -51,6 +51,14 @@ Spiking Neural Networks (SNNs) and neuromorphic hardware offer significant advan
 
 ## Leaky Integrate-and-Fire (LIF) Neuron Model
 
+### Fundamental Concept
+**Membrane Potential:** electrical potential difference across the membrane of a neuron or other excitable cell. This potential difference arises due to the distribution of ions across the cell membrane and their movement through ion channels.<br>
+
+The membrane potential V is defined as:<br>
+V = Vinside − Voutside<br>
+Vinside ​is the electrical potential inside the cell(neuron).<br>
+Voutside is the electrical potential outside the cell(neuron).<br>
+
 ### Model Description
 The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. The membrane potential V of the neuron is governed by the following differential equation:
 
