@@ -43,15 +43,8 @@ Spiking Neural Networks (SNNs) and neuromorphic hardware offer significant advan
 ## Leaky Integrate-and-Fire (LIF) Neuron Model
 
 ### Fundamental Concept
-**Membrane Potential:** electrical potential difference across the membrane of a neuron or other excitable cell. This potential difference arises due to the distribution of ions across the cell membrane and their movement through ion channels.<br>
-
-The membrane potential V is defined as:<br>
-V = Vinside − Voutside<br>
-Vinside ​is the electrical potential inside the cell(neuron).<br>
-Voutside is the electrical potential outside the cell(neuron).<br>
 
 **Membrane Time Constant τm:** τ represents a time constant, The subscript m stands for "membrane".
-
 τm = RC
 - R is the membrane resistance. With higher resistance, the membrane potential changes more slowly because the current flow is reduced.
 - C is the membrane capacitance. With higher capacitance, the membrane can store more charge, leading to a slower change in membrane potential for a given input current.
@@ -61,19 +54,24 @@ Membrane resistance 𝑅 = 10MΩ
 Membrane capacitance 𝐶 = 100pF
 Membrane time constant τm = RC = 10×100 = 1000ms
 
+**Membrane Potential:** electrical potential difference across the membrane of a neuron or other excitable cell. This potential difference arises due to the distribution of ions across the cell membrane and their movement through ion channels.<br>
+
+The membrane potential V is defined as:<br>
+V = Vinside − Voutside<br>
+Vinside ​is the electrical potential inside the cell(neuron).<br>
+Voutside is the electrical potential outside the cell(neuron).<br>
+
 ### Model Description
 The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. Main function of using the Leaky Integrate-and-Fire (LIF) model is to obtain the membrane potential V[t] at any given moment t and to analyze V over a period of time. The membrane potential V of the neuron is governed by the following differential equation:
 
 τm(dt/dV(t)) = −(V(t)−Vrest)+RmI(t)
 
 where:
-- τm is the membrane time constant (the time it takes for the membrane potential to decay to 1/e of its value).
+- τm is the membrane time constant.
 - V(t) is the membrane potential at time t.
 - Vrest is the resting potential (the potential at which the neuron is at rest).
 - Rm is the membrane resistance.
 - I(t) is the input current at time t.
-
--  τm is the membrane time constant
 
 ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
 
