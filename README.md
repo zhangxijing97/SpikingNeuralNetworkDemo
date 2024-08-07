@@ -59,7 +59,16 @@ V = Vinside − Voutside<br>
 Vinside ​is the electrical potential inside the cell(neuron).<br>
 Voutside is the electrical potential outside the cell(neuron).<br>
 
-**Membrane Time Constant τm:** 
+**Membrane Time Constant τm:** τ represents a time constant, The subscript m stands for "membrane".
+
+τm = RC
+- R is the membrane resistance. With higher resistance, the membrane potential changes more slowly because the current flow is reduced.
+- C is the membrane capacitance. With higher capacitance, the membrane can store more charge, leading to a slower change in membrane potential for a given input current.
+
+Example:
+Membrane resistance 𝑅 = 10MΩ
+Membrane capacitance 𝐶 = 100pF
+Membrane time constant τm = RC = 10×100 = 1000ms
 
 ### Model Description
 The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. The membrane potential V of the neuron is governed by the following differential equation:
