@@ -37,22 +37,6 @@
 - Designed for efficient use of power and resources.
 - Enables real-time adaptation and rapid decision-making.
 
-#### Synaptic Plasticity
-- The ability of synapses to strengthen or weaken over time in response to increases or decreases in activity.
-
-#### Neurotransmitters
-- Chemicals that transmit signals across a synapse from one neuron to another.
-
-#### Artificial Neural Networks (ANNs)
-- Computational models inspired by neural circuits in the brain.
-- Used for tasks such as pattern recognition and machine learning.
-
-#### Key Points
-- **Neuron**: Basic unit of the nervous system, processes and transmits information.
-- **Synapse**: Junction between two neurons for signal transmission.
-- **Axon**: Long, thread-like part of a neuron transmitting impulses away from the cell body.
-- **Dendrite**: Branched projections of a neuron receiving signals from other neurons.
-
 ### Summary
 Spiking Neural Networks (SNNs) and neuromorphic hardware offer significant advantages in terms of speed, efficiency, and real-time processing, drawing inspiration from the structure and function of the human brain.
 
