@@ -43,7 +43,7 @@ Spiking Neural Networks (SNNs) and neuromorphic hardware offer significant advan
 ## Leaky Integrate-and-Fire (LIF) Neuron Model
 
 ### Fundamental Concept
-**Membrane Potential:** Main function of using the Leaky Integrate-and-Fire (LIF) model is to obtain the membrane potential V[t] at any given moment t and to analyze V over a period of time. electrical potential difference across the membrane of a neuron or other excitable cell. This potential difference arises due to the distribution of ions across the cell membrane and their movement through ion channels.<br>
+**Membrane Potential:** electrical potential difference across the membrane of a neuron or other excitable cell. This potential difference arises due to the distribution of ions across the cell membrane and their movement through ion channels.<br>
 
 The membrane potential V is defined as:<br>
 V = Vinside − Voutside<br>
@@ -62,7 +62,7 @@ Membrane capacitance 𝐶 = 100pF
 Membrane time constant τm = RC = 10×100 = 1000ms
 
 ### Model Description
-The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. The membrane potential V of the neuron is governed by the following differential equation:
+The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. Main function of using the Leaky Integrate-and-Fire (LIF) model is to obtain the membrane potential V[t] at any given moment t and to analyze V over a period of time. The membrane potential V of the neuron is governed by the following differential equation:
 
 τm(dt/dV(t)) = −(V(t)−Vrest)+RmI(t)
 
