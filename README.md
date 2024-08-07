@@ -84,7 +84,7 @@ where:
 
 -  τm is the membrane time constant
 
-![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron.png)
+![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
 
 ### Dynamics of the LIF Model
 1. **Integration**:
