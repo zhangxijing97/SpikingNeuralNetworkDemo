@@ -87,10 +87,49 @@ where:
 3. **Refractory Period**:
    - After a spike, there may be a refractory period during which the neuron is unable to fire again, allowing the neuron to reset.
 
-### Summary
-The LIF model is a simple yet powerful way to describe the dynamics of a neuron's membrane potential and its spiking behavior. The key components of the model are:
-- The integration of input currents that increase the membrane potential.
-- The leakage that causes the membrane potential to decay.
-- The threshold mechanism that triggers spikes when the membrane potential reaches a certain value.
+### Python Simulation Code
+```python
+import numpy as np
+import matplotlib.pyplot as plt
 
-This model is widely used in computational neuroscience to study neural behavior and network dynamics.
+# Parameters
+tau = 20.0         # Membrane time constant (ms)
+R = 1.0            # Membrane resistance (Ohms)
+V_rest = -65.0     # Resting membrane potential (mV)
+V_th = -50.0       # Threshold potential (mV)
+V_reset = -65.0    # Reset potential after firing (mV)
+I = 20.0           # Increased input current (uA/cm^2)
+dt = 0.1           # Time step (ms)
+T = 100.0          # Total simulation time (ms)
+
+# Time array
+time = np.arange(0, T + dt, dt)
+
+# Initialize membrane potential
+V = np.zeros_like(time)
+V[0] = V_rest
+
+# Simulation loop
+for t in range(1, len(time)):
+    # Update the membrane potential using the differential equation
+    dV = (- (V[t-1] - V_rest) + R * I) / tau
+    V[t] = V[t-1] + dV * dt
+    # print(V[t])
+    
+    # Check for firing
+    if V[t] >= V_th:
+        V[t] = V_reset  # Reset potential after firing
+
+# Create the plot
+plt.figure(figsize=(12, 6))
+
+# Plot the membrane potential V(t) vs. time t
+plt.plot(time, V, label='Membrane Potential (mV)')
+plt.axhline(V_th, color='r', linestyle='--', label='Threshold Potential')
+plt.axhline(V_reset, color='b', linestyle='--', label='Reset Potential')
+plt.xlabel('Time (ms)')
+plt.ylabel('Membrane Potential (mV)')
+plt.title('Leaky Integrate-and-Fire Neuron Simulation')
+plt.legend()
+plt.show()
+```
