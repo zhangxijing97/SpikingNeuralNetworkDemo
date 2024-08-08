@@ -66,7 +66,7 @@ Voutside is the electrical potential outside the cell(neuron).<br>
 The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. Main function of using the Leaky Integrate-and-Fire (LIF) model is to obtain the membrane potential V[t] at any given moment t and to analyze V over a period of time. The membrane potential V of the neuron is governed by the following differential equation:
 
 <!-- τm(dV(t)/dt) = −(V(t) − Vrest) + RI(t) -->
-\[ \tau_m \frac{dV(t)}{dt} = - (V(t) - V_{\text{rest}}) + R I(t) \]
+$$\tau_m \frac{dV(t)}{dt} = - (V(t) - V_{\text{rest}}) + R I(t)$$
 
 where:
 - τm is the membrane time constant, which represents the rate at which the membrane potential decays over time.
