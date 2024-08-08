@@ -81,6 +81,7 @@ where:
 
 ### Equations in Discrete Time
 - $\( \Delta t \) is the time step of the simulation.
+$\sqrt{3x-1}+(1+x)^2$
 
 ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
 
