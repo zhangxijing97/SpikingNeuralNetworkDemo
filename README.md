@@ -80,7 +80,8 @@ where:
 2. **Input Current**: The term RI(t) represents the input current scaled by the membrane resistance. This term drives the membrane potential towards depolarization(less negative) when there is input current.
 
 ### Equations in Discrete Time
-- $\( \Delta t \) is the time step of the simulation.
+- $\( \Delta t \) is the time step of the simulation.<br>
+
 $\sqrt{3x-1}+(1+x)^2$
 
 ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
