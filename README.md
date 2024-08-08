@@ -9,6 +9,7 @@
    - [Fundamental Concept](#fundamental-concept)
    - [Model Description](#model-description)
    - [Dynamics of the LIF Model](#dynamics-of-the-lif-model)
+   - [Python Simulation Code](#python-simulation-code)
 
 ## Introduction
 
@@ -64,16 +65,25 @@ Voutside is the electrical potential outside the cell(neuron).<br>
 ### Model Description
 The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes how a neuron's membrane potential evolves over time and generates spikes. Main function of using the Leaky Integrate-and-Fire (LIF) model is to obtain the membrane potential V[t] at any given moment t and to analyze V over a period of time. The membrane potential V of the neuron is governed by the following differential equation:
 
-τm(dt/dV(t)) = −(V(t)−Vrest)+RmI(t)
+τm(dV(t)/dt) = −(V(t) − Vrest) + RI(t)
 
 where:
-- τm is the membrane time constant.
+- τm is the membrane time constant, which represents the rate at which the membrane potential decays over time.
 - V(t) is the membrane potential at time t.
 - Vrest is the resting potential (the potential at which the neuron is at rest).
-- Rm is the membrane resistance.
+- R is the membrane resistance.
 - I(t) is the input current at time t.
 
+### Key Features
+1. **Leakage Term**: The term −(V(t) − Vrest) represents the leakage of the membrane potential towards the resting potential Vrest. This term ensures that the membrane potential decays back to the resting potential in the absence of input current.
+
+2. **Input Current**: The term RI(t) represents the input current scaled by the membrane resistance. This term drives the membrane potential towards depolarization(less negative) when there is input current.
+
+### Equations in Discrete Time
+- \( \Delta t \) is the time step of the simulation.
+
 ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
+
 
 ### Dynamics of the LIF Model
 1. **Integration**:
