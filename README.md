@@ -45,8 +45,8 @@ Spiking Neural Networks (SNNs) and neuromorphic hardware offer significant advan
 
 ### Fundamental Concept
 
-**Membrane Time Constant τm:** τ represents a time constant, The subscript m stands for "membrane".
-τm = RC
+**Membrane Time Constant $\tau_m$:** τ represents a time constant, The subscript m stands for "membrane".
+$\tau_m$ = RC
 - R is the membrane resistance. With higher resistance, the membrane potential changes more slowly because the current flow is reduced.
 - C is the membrane capacitance. With higher capacitance, the membrane can store more charge, leading to a slower change in membrane potential for a given input current.
 
@@ -68,11 +68,11 @@ The **Leaky Integrate-and-Fire (LIF)** neuron is a simple model that describes h
 $$\tau_m \frac{dV(t)}{dt} = - (V(t) - V_{\text{rest}}) + R I(t)$$
 
 where:
-- τm is the membrane time constant, which represents the rate at which the membrane potential decays over time.
-- V(t) is the membrane potential at time t.
-- Vrest is the resting potential (the potential at which the neuron is at rest).
-- R is the membrane resistance.
-- I(t) is the input current at time t.
+- $\tau_m$ is the membrane time constant, which represents the rate at which the membrane potential decays over time.
+- $V(t)$ is the membrane potential at time t.
+- $V_{\text{rest}}$ is the resting potential (the potential at which the neuron is at rest).
+- $R$ is the membrane resistance.
+- $I(t)$ is the input current at time t.
 
 ### Key Features
 1. **Leakage Term**: The term −(V(t) − Vrest) represents the leakage of the membrane potential towards the resting potential Vrest. This term ensures that the membrane potential decays back to the resting potential in the absence of input current.
