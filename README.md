@@ -58,7 +58,7 @@ Membrane time constant τm = RC = 10×100 = 1000ms
 **Membrane Potential:** electrical potential difference across the membrane of a neuron or other excitable cell. This potential difference arises due to the distribution of ions across the cell membrane and their movement through ion channels.<br>
 
 The membrane potential V$V$is defined as:<br>
-$V$ = $V_{\text{inside}}$ − $V_{\text{outside}}$<br>
+$V = V_{\text{inside}} − V_{\text{outside}}$<br>
 $V_{\text{inside}}$ ​is the electrical potential inside the cell(neuron).<br>
 $V_{\text{outside}}$ is the electrical potential outside the cell(neuron).<br>
 
