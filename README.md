@@ -75,7 +75,7 @@ where:
 - $I(t)$ is the input current at time t.
 
 ### Key Features
-1. **Leakage Term**: The term −(V(t) − Vrest) represents the leakage of the membrane potential towards the resting potential Vrest. This term ensures that the membrane potential decays back to the resting potential in the absence of input current.
+1. **Leakage Term**: The term $$- (V(t) - V_{\text{rest}})$$ represents the leakage of the membrane potential towards the resting potential Vrest. This term ensures that the membrane potential decays back to the resting potential in the absence of input current.
 
 2. **Input Current**: The term RI(t) represents the input current scaled by the membrane resistance. This term drives the membrane potential towards depolarization(less negative) when there is input current.
 
