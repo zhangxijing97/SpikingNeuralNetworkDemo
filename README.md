@@ -79,6 +79,12 @@ where:
 
 2. **Input Current**: The term RI(t) represents the input current scaled by the membrane resistance. This term drives the membrane potential towards depolarization(less negative) when there is input current.
 
+| Term             | Description                                                                                                                                                                             |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Leakage Term** | The term $$- (V(t) - V_{\text{rest}})$$ represents the leakage of the membrane potential towards the resting potential $$V_{\text{rest}}$$. This term ensures that the membrane potential decays back to the resting potential in the absence of input current. |
+| **Input Current**| The term $$RI(t)$$ represents the input current scaled by the membrane resistance. This term drives the membrane potential towards depolarization (less negative) when there is input current. ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png) |
+
+
 ### Equations in Discrete Time
 
 In a discrete-time simulation, the LIF model can be approximated as:
@@ -86,6 +92,8 @@ In a discrete-time simulation, the LIF model can be approximated as:
 $$V[t + \Delta t] = V[t] + \frac{\Delta t}{\tau_m} \left( - (V[t] - V_{\text{rest}}) + R I[t] \right)$$
 
 where $\Delta t$ is the time step of the simulation.
+
+
 
 ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
 
