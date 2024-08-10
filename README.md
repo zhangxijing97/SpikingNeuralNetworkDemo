@@ -96,6 +96,7 @@ where $\Delta t$ is the time step of the simulation.
 
 
 ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
+<img src="Image/leaky_integrate_and_fire_neuron02.png" alt="Leaky Integrate and Fire Neuron" width="400"/>
 
 
 ### Dynamics of the LIF Model
