@@ -104,7 +104,7 @@ $$V[0 + 0.1] = -65 + \frac{0.1}{20.0} \left( - ((-65) - (-65)) + 1 \times 20.0 \
 
 $$V[0.1] = 64.9$$
 
-The membrane potential \( V(t) \) for the first 10 steps are as follows: 
+The membrane potential \( V(t) \) for the first 10 steps are as follows: <br>
 -64.9000, -64.8005, -64.7015, -64.6030, -64.5050, -64.4075, -64.3104, -64.2139, -64.1178, -64.0222.
 
 ### Dynamics of the LIF Model
