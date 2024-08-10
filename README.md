@@ -76,14 +76,10 @@ where:
 
 ### Key Features
 1. **Leakage Term**: The term $$- (V(t) - V_{\text{rest}})$$ represents the leakage of the membrane potential towards the resting potential Vrest. This term ensures that the membrane potential decays back to the resting potential in the absence of input current.
+![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron01.png)
 
 2. **Input Current**: The term RI(t) represents the input current scaled by the membrane resistance. This term drives the membrane potential towards depolarization(less negative) when there is input current.
-
-| Term             | Description                                                                                                                                                                             |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Leakage Term** | The term $$- (V(t) - V_{\text{rest}})$$ represents the leakage of the membrane potential towards the resting potential $$V_{\text{rest}}$$. This term ensures that the membrane potential decays back to the resting potential in the absence of input current. |
-| **Input Current**| The term $$RI(t)$$ represents the input current scaled by the membrane resistance. This term drives the membrane potential towards depolarization (less negative) when there is input current. ![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png) |
-
+![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
 
 ### Equations in Discrete Time
 
@@ -92,12 +88,18 @@ In a discrete-time simulation, the LIF model can be approximated as:
 $$V[t + \Delta t] = V[t] + \frac{\Delta t}{\tau_m} \left( - (V[t] - V_{\text{rest}}) + R I[t] \right)$$
 
 where $\Delta t$ is the time step of the simulation.
+Example:
+tau = 20.0         # Membrane time constant (ms)
+R = 1.0            # Membrane resistance (Ohms)
+V_rest = -65.0     # Resting membrane potential (mV)
+V_th = -50.0       # Threshold potential (mV)
+V_reset = -65.0    # Reset potential after firing (mV)
+I = 20.0           # Increased input current (uA/cm^2)
+dt = 0.1           # Time step (ms)
 
-
-
-![Leaky Integrate and Fire Neuron](Image/leaky_integrate_and_fire_neuron02.png)
-<img src="Image/leaky_integrate_and_fire_neuron02.png" alt="Leaky Integrate and Fire Neuron" width="400"/>
-
+$$V[t + \Delta t] = V[t] + \frac{\Delta t}{\tau_m} \left( - (V[t] - V_{\text{rest}}) + R I[t] \right)$$
+$$V[0 + 0.1] = -65 + \frac{0.1}{20.0} \left( - ((-65) - (-65)) + 1 \times 20.0 \right)$$
+$$V[0.1] = 64.9$$
 
 ### Dynamics of the LIF Model
 1. **Integration**:
