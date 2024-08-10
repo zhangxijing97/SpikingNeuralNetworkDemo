@@ -88,17 +88,20 @@ In a discrete-time simulation, the LIF model can be approximated as:
 $$V[t + \Delta t] = V[t] + \frac{\Delta t}{\tau_m} \left( - (V[t] - V_{\text{rest}}) + R I[t] \right)$$
 
 where $\Delta t$ is the time step of the simulation.
-Example:
-tau = 20.0         # Membrane time constant (ms)
-R = 1.0            # Membrane resistance (Ohms)
-V_rest = -65.0     # Resting membrane potential (mV)
-V_th = -50.0       # Threshold potential (mV)
-V_reset = -65.0    # Reset potential after firing (mV)
-I = 20.0           # Increased input current (uA/cm^2)
-dt = 0.1           # Time step (ms)
+
+Example:<br>
+tau = 20.0         # Membrane time constant (ms)<br>
+R = 1.0            # Membrane resistance (Ohms)<br>
+V_rest = -65.0     # Resting membrane potential (mV)<br>
+V_th = -50.0       # Threshold potential (mV)<br>
+V_reset = -65.0    # Reset potential after firing (mV)<br>
+I = 20.0           # Increased input current (uA/cm^2)<br>
+dt = 0.1           # Time step (ms)<br>
 
 $$V[t + \Delta t] = V[t] + \frac{\Delta t}{\tau_m} \left( - (V[t] - V_{\text{rest}}) + R I[t] \right)$$
+
 $$V[0 + 0.1] = -65 + \frac{0.1}{20.0} \left( - ((-65) - (-65)) + 1 \times 20.0 \right)$$
+
 $$V[0.1] = 64.9$$
 
 ### Dynamics of the LIF Model
