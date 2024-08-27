@@ -97,7 +97,7 @@ V_th = -50.0       # Threshold potential (mV)<br>
 V_reset = -65.0    # Reset potential after firing (mV)<br>
 I = 20.0           # Increased input current (uA/cm^2)<br>
 dt = 0.1           # Time step (ms)<br>
-
+      
 $$V[t + \Delta t] = V[t] + \frac{\Delta t}{\tau_m} \left( - (V[t] - V_{\text{rest}}) + R I[t] \right)$$
 
 $$V[0 + 0.1] = -65 + \frac{0.1}{20.0} \left( - ((-65) - (-65)) + 1 \times 20.0 \right)$$
